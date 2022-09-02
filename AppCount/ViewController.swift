@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var plusOneButton: UIButton!
+    
+    private var count = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        plusOneButton.layer.cornerRadius = plusOneButton.frame.height / 5
     }
 
-
+    @IBAction func changeCountButton(_ sender: Any) {
+        count += 1
+        countLabel.text = "\(count)"
+    }
+    
+    
 }
 

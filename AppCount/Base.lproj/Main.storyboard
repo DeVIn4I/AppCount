@@ -31,6 +31,9 @@
                                 <state key="normal" title="Тык!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeCountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Kx-PH-Pmf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikv-jy-GAD">
                                 <rect key="frame" x="52" y="282.5" width="310" height="72"/>
@@ -56,6 +59,10 @@
                             <constraint firstItem="ikv-jy-GAD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="xY0-iA-EiT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="ikv-jy-GAD" id="d9I-Wz-8CP"/>
+                        <outlet property="plusOneButton" destination="9fk-aW-oqO" id="Sv9-0A-IHr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
